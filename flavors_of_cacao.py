@@ -196,8 +196,8 @@ from_04_to_06 = pdk.Layer("ScatterplotLayer",
 )
 
 from_06_to_08 = pdk.Layer("ScatterplotLayer",
-    location_df2[(location_df2['rating'] > float(color_mapping.iloc[0])) &
-                 (location_df2['rating'] <= float(color_mapping.iloc[1]))],
+    location_df2[(location_df2['rating'] > float(color_mapping.iloc[2])) &
+                 (location_df2['rating'] <= float(color_mapping.iloc[3]))],
     pickable=True,
     opacity=0.5,
     radius_scale=100,
