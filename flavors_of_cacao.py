@@ -102,10 +102,12 @@ avg_df1["company_name"] = test_df
 plot_df1 = avg_df1[avg_df1.company_location.isin(company_location)]
 
 # The following code referred to altair documentation:
+# https://github.com/streamlit/demo-uber-nyc-pickups/blob/master/streamlit_app.py
 # https://altair-viz.github.io/user_guide/customization.html
 # https://altair-viz.github.io/user_guide/encoding.html
 # https://altair-viz.github.io/user_guide/generated/core/altair.Color.html
-# https://altair-viz.github.io/gallery/scatter_tooltips.html#
+# https://altair-viz.github.io/gallery/scatter_tooltips.html
+
 
 chart = (
     alt.Chart(plot_df1, title="Average Rating by Company Location",)
@@ -147,6 +149,7 @@ location_df2["radius"] = location_df2["count"] * 10
 color_mapping = location_df2['rating'].quantile([0.2, 0.4, 0.6, 0.8])
 
 # The following scatterplot layer referred to the pydeck documentation:
+# https://github.com/streamlit/demo-uber-nyc-pickups/blob/master/streamlit_app.py
 # https://deckgl.readthedocs.io/en/latest/gallery/scatterplot_layer.html?highlight=scatterplotlayer
 # and https://deckgl.readthedocs.io/en/latest/layer.html
 
