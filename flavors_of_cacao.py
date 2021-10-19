@@ -88,8 +88,10 @@ st.markdown("When we think of chocolate bars, we usually select the companies th
             "countries of company locations that are specifically trustworthy? We will try to find some insights by"
             "looking into the average rating over chocolate company locations.")
 
-company_location = st.multiselect("Choose the Company Location of Chocolate Bars(Default are 10 random locations)", df.company_location.unique(),
-                                  np.random.choice(df.company_location.unique(), 10, replace=False))
+np.random.seed(2021)
+default_list = np.random.choice(df.company_location.unique(), 10, replace=False)
+company_location = st.multiselect("Choose the Company Location of Chocolate Bars (Default values are 10 random countries)", df.company_location.unique(),
+                                  default_list)
 
 st.markdown("By hovering on the bars in the chart, you will also be able to get a list of companies names that are "
             "located at that country to help you decide which brand to buy next time!")
