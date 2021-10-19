@@ -136,7 +136,7 @@ st.markdown("For this world map plot, you can zoom in or zoom out to check the d
             "using cocoa beans there, and the color indicates the average rating score of that location. There are "
             "a total of five colors used on this map, where color closer to red indicates higher rating, and color "
             "closer to blue indicates lower rating. You can also hover on the points to get the specific numeric rating"
-            "if the color is not very detailed.")
+            " if the color is not very detailed.")
 
 
 avg_df2 = df.groupby('general_location')[["rating"]].mean()
@@ -225,9 +225,11 @@ above_08 = pdk.Layer("ScatterplotLayer",
     auto_highlight=True,
 )
 
-my_map = pdk.Deck(layers=[below_02, from_02_to_04, from_04_to_06, from_06_to_08, above_08], initial_view_state=INITIAL_VIEW_STATE ,
+my_map = pdk.Deck(layers=[below_02, from_02_to_04, from_04_to_06, from_06_to_08, above_08],
+                  initial_view_state=INITIAL_VIEW_STATE,
                   tooltip={"html": "<b>Rating:</b> {rating}"})
 st.pydeck_chart(my_map)
 
 st.markdown("From the world map, we observe that South America has many origins that grow cocoa beans, and Guatemala "
-            "grows some high quality cocoa beans.")
+            "grows some high quality cocoa beans. These information provides good quality guidance to customers who"
+            "are not very familiar with origins of cocoa beans.")
