@@ -111,7 +111,7 @@ plot_df1 = avg_df1[avg_df1.company_location.isin(company_location)]
 # https://altair-viz.github.io/gallery/scatter_tooltips.html
 
 
-chart = (
+st.altair_chart((
     alt.Chart(plot_df1, title="Average Rating by Company Location",)
     .mark_bar()
     .encode(
@@ -119,8 +119,7 @@ chart = (
         y=alt.Y("company_location", sort=alt.EncodingSortField(field="avg_rating"),
                 title="Company Location(By Country)",),
         color=alt.Color('rating', scale=alt.Scale(scheme='plasma')),
-        tooltip=["avg_rating", "company_name"]))
-st.altair_chart(chart, use_container_width=True)
+        tooltip=["avg_rating", "company_name"])), use_container_width=True)
 
 
 st.write("From the bar chart above, it seems that the best rated companies are not from the major production countries "
@@ -154,13 +153,6 @@ color_mapping = location_df2['rating'].quantile([0.2, 0.4, 0.6, 0.8])
 # https://github.com/streamlit/demo-uber-nyc-pickups/blob/master/streamlit_app.py
 # https://deckgl.readthedocs.io/en/latest/gallery/scatterplot_layer.html?highlight=scatterplotlayer
 # and https://deckgl.readthedocs.io/en/latest/layer.html
-
-max_row = location_df2.iloc[location_df2['count'].idxmax()]
-INITIAL_VIEW_STATE = pdk.ViewState(longitude=max_row['lon'],
-                           latitude=max_row['lat'],
-                           zoom=1,
-                           min_zoom=1,
-                           max_zoom=20)
 
 below_02 = pdk.Layer("ScatterplotLayer",
     location_df2[location_df2["rating"] <= color_mapping.iloc[0]],
@@ -230,8 +222,15 @@ above_08 = pdk.Layer("ScatterplotLayer",
     auto_highlight=True,
 )
 
+max_row = location_df2.iloc[location_df2['count'].idxmax()]
 my_map = pdk.Deck(layers=[below_02, from_02_to_04, from_04_to_06, from_06_to_08, above_08],
-                  initial_view_state=INITIAL_VIEW_STATE,
+                  initial_view_state={
+                      "longitude": max_row['lon'],
+                      "latitude": max_row['lat'],
+                      "zoom": 1,
+                      "min_zoom": 1,
+                      "max_zoom": 20,
+                  },
                   tooltip={"html": "<b>Rating:</b> {rating}"})
 st.pydeck_chart(my_map)
 
