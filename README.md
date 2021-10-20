@@ -55,5 +55,5 @@ Next, I spent about 1 hr to write the documentations and comments on the website
 
 Last but not least, I tried to deploy the website(0.5hr).
 
-Therefore, I spent a total of ~11 hrs on this homework.
+Therefore, I spent a total of ~11 hrs on this homework, and the developing website step took longest time.
 
