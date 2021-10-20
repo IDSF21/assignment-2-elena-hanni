@@ -15,7 +15,7 @@ st.title("Exploration of Chocolate Bar Ratings")
 st.write("Link to my Github Classroom Repository: https://github.com/IDSF21/assignment-2-elena-hanni")
 
 
-st.header("1. What factors are related to Rating for chocolate bars?")
+st.header("1. What factors are related to rating for chocolate bars?")
 
 st.markdown("Chocolate bars are very popular snacks and treats. When we choose from so many brands available in the "
             "market, a score that rates chocolate bars will help us make the choice. One thing that we would be "
@@ -38,13 +38,13 @@ st.markdown("From the box plots above, we observe that the rating fluctuates wit
             "and fluctuate most with the general location, the origin of the beans.")
 
 
-st.header("2. What’s the relationship between cocoa solids percentage and rating?")
+st.header("2. What’s the relationship between cocoa percentage and rating?")
 
 st.markdown("Cocoa percentage of chocolate bars is an important scale that we would like to check when we buy "
             "chocolates. However, the higher cocoa percentage means a stronger, and usually not public welcomed "
             "bitter taste. Chocolates with appropriate cocoa percentage blend in other ingredients like sugar "
             "and milk to create a sweet and silky taste. Does this also applies to the rating of cocoa? "
-            "In this part, we will try to explore the relationship between cocoa solids percentage and rating.")
+            "In this part, we will try to explore the relationship between cocoa percentage and rating.")
 
 st.markdown("Here, we can specifically inspect the date from some years in order to consider fluctuations due to "
             "weather and other external aspects in different years.")
@@ -83,7 +83,7 @@ st.write("By observing the scatterplots, we can find that there might exists som
          "**'chocolates'**? ")
 
 
-st.header("3. Which countries produce the highest-rated bars?")
+st.header("3. Which countries have the companies that produce chocolate with the highest average rating?")
 
 st.markdown("When we think of chocolate bars, we usually select the companies that we are familiar with -- the ones "
             "that we always see on TV commercials or the brands that we have been always buying. However, are there "
@@ -128,7 +128,7 @@ st.write("From the bar chart above, it seems that the best rated companies are n
          "that we are most familiar with. "
          "These information maybe helpful when you check the companies that produce the chocolate bars.")
 
-st.header("4. Where are the best cocoa beans grown?")
+st.header("4. Where are the highest rated chocolates' cocoa beans grown?")
 
 st.markdown("When we buy some products in our daily lives, quality is one of the most important things that we care "
             "about; this also applies to the case of chocolate bars. But how do we find the best chocolate bars from "

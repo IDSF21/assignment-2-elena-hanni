@@ -14,15 +14,15 @@ With the background information about the dataset, I want to solve the following
 
 This question aims to reach the goal of finding out what external factors might influence the rating, and understand what rating score represents.
 
-*2. What’s the relationship between cacao solids percentage and rating?*
+*2. What’s the relationship between cacao percentage and rating?*
 
 This question aims to reach the goal of finding out the relationship between cacao solids percentage and rating, as this also helps us understand how rating might be developed and how to choose chocolate with different cocoa percentage.
 
-*3. Which countries produce the highest-rated bars?*
+*3. Which countries have the companies that produce chocolate with the highest average rating?*
 
 This question aims to reach the goal of finding the countries of chocolate production companies. This helps users/customers find the best chocolate bars avaialble at their local shops/ online stores.
 
-*4. Where are the best cocoa beans grown?*
+*4. Where are the highest rated chocolates' cocoa beans grown?*
 
 This question aims to reach the goal of finding the best origin of cocoa beans when users/customers want to try some new, high quality chocolates they have never seen.
 
