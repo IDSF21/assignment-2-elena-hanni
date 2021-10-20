@@ -12,6 +12,8 @@ df = pd.read_csv("output.csv")
 
 st.title("Exploration of Chocolate Bar Ratings")
 
+st.write("Link to my Github Classroom Repository: https://github.com/IDSF21/assignment-2-elena-hanni")
+
 
 st.header("1. What factors are related to Rating for chocolate bars?")
 
