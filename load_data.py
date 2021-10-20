@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from geopy.geocoders import Nominatim
 
-df = pd.read_csv("flavors_of_cacao.csv")
+df = pd.read_csv("flavors_of_cocoa.csv")
 df.columns = ["company", "specific_location", "REF", "review_date", "cocoa_percentage", "company_location", "rating", "bean_type", "general_location"]
 
 app = Nominatim(user_agent="tutorial")
