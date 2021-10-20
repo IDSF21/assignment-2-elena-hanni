@@ -4,16 +4,25 @@
 
 Chocolate is one of the most popular candies in the world. Each year, residents of the United States collectively eat more than 2.8 billions pounds. 
 However, not all chocolate bars are created equal! This dataset contains expert ratings of over 1,700 individual chocolate bars, along with information on their regional origin, percentage of cocoa, the variety of chocolate bean used and where the beans were grown.
+Link to Kaggle Dataset: https://www.kaggle.com/rtatman/chocolate-bar-ratings
 
 With the background information about the dataset, I want to solve the following questions:
 
 *1. What factors are related to rating for chocolate bars?*
 
+This question aims to reach the goal of finding out what external factors might influence the rating, and understand what rating score represents.
+
 *2. What’s the relationship between cacao solids percentage and rating?*
+
+This question aims to reach the goal of finding out the relationship between cacao solids percentage and rating, as this also helps us understand how rating might be developed and how to choose chocolate with different cocoa percentage.
 
 *3. Which countries produce the highest-rated bars?*
 
-*4. Where are the best cacao beans grown?*
+This question aims to reach the goal of finding the countries of chocolate production companies. This helps users/customers find the best chocolate bars avaialble at their local shops/ online stores.
+
+*4. Where are the best cocoa beans grown?*
+
+This question aims to reach the goal of finding the best origin of cocoa beans when users/customers want to try some new, high quality chocolates they have never seen.
 
 By solving these questions through this application, we will be able to find out what factors are related to the rating and how we can better choose the chocolates bars next time we are at the shop with the help of rating.
 
