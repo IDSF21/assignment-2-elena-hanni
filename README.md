@@ -1,5 +1,7 @@
 **Exploration of Chocolate Bar Ratings**
 
+Deployed Link: https://share.streamlit.io/elena-hanni/assignment-2-elena-hanni/main/flavors_of_cocoa.py 
+
 **Project Goal:**
 
 Description from the original dataset: Chocolate is one of the most popular candies in the world. Each year, residents of the United States collectively eat more than 2.8 billions pounds. 
